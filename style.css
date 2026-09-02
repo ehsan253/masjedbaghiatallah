@@ -18,7 +18,7 @@ body {
 /* Header */
 
 header {
-    background: #102d23;
+    background: #087f5b;
     color: white;
     padding: 18px 7%;
     display: flex;
@@ -30,11 +30,7 @@ header {
     box-shadow: 0 3px 15px rgba(0,0,0,0.25);
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #d4af37;
-}
+
 
 nav {
     display: flex;
@@ -355,4 +351,22 @@ footer {
         grid-template-columns: 1fr;
     }
 
+}
+}.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.logo span {
+    color: #f5dfb5;
+    font-size: 21px;
+    font-weight: bold;
 }
