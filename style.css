@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f5f3ed;
+    color: #222;
+    line-height: 1.8;
+}
+
+/* Header */
+
+header {
+    background: #102d23;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* Hero */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(5, 25, 18, 0.72),
+            rgba(5, 25, 18, 0.82)
+        ),
+        url("images/mosque.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    padding: 30px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+/* Button */
+
+.button {
+    display: inline-block;
+    background: #d4af37;
+    color: #102d23;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+
+.section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    color: #102d23;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.section p {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Gallery */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.photo {
+    height: 250px;
+    background: #ddd;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Videos */
+
+.video-box {
+    max-width: 800px;
+    min-height: 250px;
+    margin: 30px auto;
+    background: #102d23;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Contact */
+
+.contact {
+    background: #e8e4d8;
+}
+
+/* Footer */
+
+footer {
+    background: #102d23;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+}.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.photo img:hover{
+    transform:scale(1.05);
+}.video-box {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #102d23;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.video-box video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+
+.news-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: right;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-top: 4px solid #d4af37;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-7px);
+}
+
+.news-card h3 {
+    color: #102d23;
+    margin-bottom: 12px;
+}
+
+.news-card span {
+    display: block;
+    margin-top: 15px;
+    color: #8a7020;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+}.welcome {
+    padding: 90px 8%;
+    background: white;
+    text-align: center;
+}
+
+.welcome-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+.welcome-text span {
+    color: #a48724;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.welcome-text h2 {
+    color: #102d23;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.welcome-text p {
+    color: #555;
+    font-size: 17px;
+}
+
+.welcome-buttons {
+    margin-top: 30px;
+}
+
+.second-button {
+    background: #102d23;
+    color: white;
+    margin-right: 10px;
+}
+
+.second-button:hover {
+    background: #d4af37;
+    color: #102d23;
+}.contact-container {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #102d23;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
