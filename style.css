@@ -302,10 +302,12 @@ footer {
         padding: 60px 6%;
     }
 }
-}.logo {
+.logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    flex-direction: row-reverse;
+    gap: 15px;
+    white-space: nowrap;
 }
 
 .logo img {
