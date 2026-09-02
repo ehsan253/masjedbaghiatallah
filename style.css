@@ -309,12 +309,14 @@ footer {
 }
 
 .logo img {
-    width: 55px;
-    height: 55px;
+    width: 75px !important;
+    height: 75px !important;
     object-fit: contain;
     border-radius: 50%;
-    background: white;
-    padding: 5px;
+    background: #ffffff !important;
+    padding: 8px !important;
+    border: 3px solid #d4af37;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.4);
 }
 
 .logo span {
