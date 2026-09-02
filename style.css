@@ -37,16 +37,23 @@ header {
 
 nav {
     display: flex;
-    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
+    padding: 7px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d4af37;
+    color: #102d23;
+    background: #d4af37;
 }
 
 /* HERO */
