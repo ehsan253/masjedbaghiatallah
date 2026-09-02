@@ -53,22 +53,21 @@ nav a:hover {
 
 .hero {
     min-height: 650px;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 
     background:
         linear-gradient(
-            rgba(5, 25, 18, 0.70),
-            rgba(5, 25, 18, 0.80)
+            rgba(5, 25, 18, 0.55),
+            rgba(5, 25, 18, 0.70)
         ),
         url("images/mosque.JPG");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
