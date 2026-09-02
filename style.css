@@ -424,6 +424,7 @@ footer {
 /* MOBILE */
 
 @media (max-width: 768px) {
+    .schedule-container{grid-template-columns: 1fr;}
 
     header {
         flex-direction: column;
