@@ -421,6 +421,85 @@ footer {
     header {
         flex-direction: column;
         gap: 15px;
+        padding: 12px 5%;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .logo-mark {
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo span {
+        font-size: 19px;
+    }
+
+    nav {
+        gap: 8px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .hero {
+        min-height: 560px;
+        padding: 30px 15px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .bismillah {
+        font-size: 19px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .button {
+        width: 220px;
+    }
+
+    .gallery,
+    .news-container,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .photo {
+        height: 250px;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+}
+
+    header {
+        flex-direction: column;
+        gap: 15px;
     }
 
     nav {
