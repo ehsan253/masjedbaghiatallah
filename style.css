@@ -202,11 +202,44 @@ nav a:hover {
 
 .news-card {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
-    text-align: right;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
     border-top: 4px solid #d4af37;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.news-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.news-card h3 {
+    color: #102d23;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.news-card p {
+    color: #555;
+    font-size: 16px;
+}
+
+.news-card span {
+    display: block;
+    margin-top: 20px;
+    color: #8a7020;
+    font-weight: bold;
+}
+.section-subtitle {
+    color: #777;
+    margin-bottom: 30px;
 }
 
 .news-card h3 {
