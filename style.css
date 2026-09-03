@@ -15,25 +15,22 @@ body {
     line-height: 1.8;
 }
 
-/* HEADER */
+/* Header */
 
 header {
-    background: #102d23;
+    background: #087f5b;
     color: white;
-    padding: 15px 7%;
+    padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #d4af37;
-}
+
 
 nav {
     display: flex;
@@ -56,7 +53,7 @@ nav a:hover {
     background: #d4af37;
 }
 
-/* HERO */
+/* Hero */
 
 .hero {
     min-height: 650px;
@@ -137,7 +134,7 @@ nav a:hover {
     margin-bottom: 30px;
 }
 
-/* BUTTON */
+/* Button */
 
 .button {
     display: inline-block;
@@ -152,9 +149,10 @@ nav a:hover {
 
 .button:hover {
     background: white;
+    transform: translateY(-3px);
 }
 
-/* SECTIONS */
+/* Sections */
 
 .section {
     padding: 80px 8%;
@@ -163,8 +161,22 @@ nav a:hover {
 
 .section h2 {
     color: #102d23;
-    font-size: 32px;
-    margin-bottom: 25px;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.section h2::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background: #d4af37;
+    margin: 12px auto 0;
+    border-radius: 10px;
 }
 
 .section p {
@@ -172,96 +184,7 @@ nav a:hover {
     margin: auto;
 }
 
-/* WELCOME */
-
-.welcome {
-    padding: 90px 8%;
-    background: white;
-    text-align: center;
-}
-
-.welcome-text {
-    max-width: 850px;
-    margin: auto;
-}
-
-.welcome-text span {
-    color: #a48724;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.welcome-text h2 {
-    color: #102d23;
-    font-size: 35px;
-    margin: 15px 0;
-}
-
-/* NEWS */
-
-.news-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: 35px auto;
-}
-
-.news-card {
-    background: white;
-    padding: 35px 25px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    border-top: 4px solid #d4af37;
-    transition: 0.3s;
-}
-
-.news-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.news-icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.news-card h3 {
-    color: #102d23;
-    font-size: 21px;
-    margin-bottom: 15px;
-}
-
-.news-card p {
-    color: #555;
-    font-size: 16px;
-}
-
-.news-card span {
-    display: block;
-    margin-top: 20px;
-    color: #8a7020;
-    font-weight: bold;
-}
-.section-subtitle {
-    color: #777;
-    margin-bottom: 30px;
-}
-
-.news-card h3 {
-    color: #102d23;
-    margin-bottom: 12px;
-}
-
-.news-card span {
-    display: block;
-    margin-top: 15px;
-    color: #8a7020;
-    font-weight: bold;
-}
-
-/* GALLERY */
+/* Gallery */
 
 .gallery {
     display: grid;
@@ -297,19 +220,7 @@ nav a:hover {
     transform: scale(1.08);
 }
 
-.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s;
-}
-
-.photo img:hover {
-    transform: scale(1.05);
-}
-
-/* VIDEO */
+/* Videos */
 
 .video-box {
     max-width: 850px;
@@ -328,66 +239,13 @@ nav a:hover {
     border-radius: 12px;
     background: #000;
 }
-
-.video-box video {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-}
-
-/* CONTACT */
+/* Contact */
 
 .contact {
     background: #e8e4d8;
 }
 
-.contact-container {
-    max-width: 1100px;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.contact-card {
-    background: white;
-    padding: 35px 25px;
-    border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    border-bottom: 4px solid #d4af37;
-    transition: 0.3s;
-}
-
-.contact-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-}
-
-.contact-icon {
-    font-size: 45px;
-    margin-bottom: 15px;
-}
-
-.contact-card h3 {
-    color: #102d23;
-    font-size: 21px;
-    margin-bottom: 12px;
-}
-
-.contact-card p {
-    color: #666;
-}
-
-.contact-icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.contact-card h3 {
-    color: #102d23;
-}
-
-/* FOOTER */
+/* Footer */
 
 footer {
     background: #102d23;
@@ -421,10 +279,9 @@ footer {
     margin: 0;
 }
 
-/* MOBILE */
+/* Mobile */
 
 @media (max-width: 768px) {
-    .schedule-container{grid-template-columns: 1fr;}
 
     header {
         flex-direction: column;
@@ -452,8 +309,14 @@ footer {
     }
 
     nav a {
-        font-size: 14px;
-        padding: 5px;
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    nav{
+         max-width: 100%;
+         gap: 5px;
+
     }
 
     .hero {
@@ -516,9 +379,15 @@ footer {
         justify-content: center;
     }
 
+    nav a {
+        font-size: 13px;
+    }
+
     .hero {
         min-height: 550px;
-    }.hero h1 {
+    }
+
+    .hero h1 {
         font-size: 38px;
     }
 
@@ -526,23 +395,235 @@ footer {
         font-size: 17px;
     }
 
-    .gallery,
-    .news-container,
-    .contact-container {
+    .gallery {
         grid-template-columns: 1fr;
     }
 
     .section {
         padding: 60px 6%;
     }
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.4s;
 }
-.logo {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    gap: 15px;
-    white-space: nowrap;
+
+.photo img:hover{
+    transform:scale(1.05);
+}.video-box {
+    max-width: 800px;
+    margin: 30px auto;
+    background: #102d23;
+    padding: 15px;
+    border-radius: 15px;
 }
+
+.video-box video {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}.news-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 35px auto 0;
+}
+
+.news-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-top: 4px solid #d4af37;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.news-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: #102d23;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 0.4s;
+}
+
+.news-card:hover::before {
+    transform: scaleX(1);
+}
+
+.news-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.news-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.news-card h3 {
+    color: #102d23;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+.news-card p {
+    color: #555;
+    font-size: 16px;
+}
+
+.news-card span {
+    display: block;
+    margin-top: 20px;
+    color: #8a7020;
+    font-weight: bold;
+}
+.section-subtitle {
+    color: #777;
+    margin-bottom: 30px;
+}
+.news-card:hover {
+    transform: translateY(-7px);
+}
+
+.news-card h3 {
+    color: #102d23;
+    margin-bottom: 12px;
+}
+
+.news-card span {
+    display: block;
+    margin-top: 15px;
+    color: #8a7020;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .news-container {
+        grid-template-columns: 1fr;
+    }
+
+}.welcome {
+    padding: 90px 8%;
+    background: white;
+    text-align: center;
+}
+
+.welcome-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+.welcome-text span {
+    color: #a48724;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.welcome-text h2 {
+    color: #102d23;
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.welcome-text p {
+    color: #555;
+    font-size: 17px;
+}
+
+.welcome-buttons {
+    margin-top: 30px;
+}
+
+.second-button {
+    background: #102d23;
+    color: white;
+    margin-right: 10px;
+}
+
+.second-button:hover {
+    background: #d4af37;
+    color: #102d23;
+}.contact-container {
+    max-width: 1100px;
+    margin: 40px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.contact-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-bottom: 4px solid #d4af37;
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.contact-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #102d23;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #666;
+}
+.contact-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.contact-card h3 {
+    color: #102d23;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .hero-logo {
+        width: 85px;
+        height: 85px;
+    }
+    .prayer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .schedule-container{grid-template-columns: 1fr;}
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        gap: 15px;
+        white-space: nowrap;
+    }
 
 .logo img {
     width: 75px !important;
@@ -620,8 +701,7 @@ footer {
 
 .schedule-card p {
     color: #666;
-}
-.image-modal {
+}.image-modal {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -652,4 +732,73 @@ footer {
 
 .close-modal:hover {
     color: #d4af37;
+}
+.prayer-section {
+    background: #102d23;
+    color: white;
+}
+
+.prayer-section h2 {
+    color: #d4af37;
+}
+
+.prayer-section .section-subtitle {
+    color: #ddd;
+}
+
+.prayer-container {
+    max-width: 1000px;
+    margin: 35px auto 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.prayer-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(212,175,55,0.5);
+    border-radius: 18px;
+    padding: 25px 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.prayer-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.13);
+}
+
+.prayer-icon {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.prayer-card h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.prayer-card strong {
+    display: block;
+    color: #d4af37;
+    font-size: 28px;
+    direction: ltr;
+}
+.hero-logo {
+    width: 105px;
+    height: 105px;
+    margin: 0 auto 20px;
+    padding: 8px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.35);
+}
+
+.hero-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
 }
